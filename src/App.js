@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  //react에서 환경변수 사용 시, 반드시 'REACT_APP_'으로 시작해야 한다.
+  const MOVIEDB_API_KEY = process.env.REACT_APP_MOVIEDB_API_KEY;
   return (
     <div className="App">
       <header className="App-header">
